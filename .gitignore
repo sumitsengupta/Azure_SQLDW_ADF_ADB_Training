@@ -5,7 +5,7 @@ bin-release/
 [Bb]in/
 
 # Day2 folder - Sumit since we are skipping it
-Day-2/
+#Day-2/
 
 # Other files and folders
 .settings/
