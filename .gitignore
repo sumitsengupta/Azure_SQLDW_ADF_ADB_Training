@@ -5,7 +5,7 @@ bin-release/
 [Bb]in/
 
 # Day2 folder - Sumit since we are skipping it
-#Day-2/
+Day-2/
 
 # Other files and folders
 .settings/
@@ -15,6 +15,9 @@ bin-release/
 *.air
 *.ipa
 *.apk
+
+# All powerpoints excluded
+*.pptx
 
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
