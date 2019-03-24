@@ -3,6 +3,11 @@
 drop External Table Fact_flight_ExtADLS
 drop External Data Source alDataSource
 drop Database Scoped Credential aldata
+
+Drop Database Scoped Credential aldata ;
+Drop  EXTERNAL FILE FORMAT pipe ;
+
+
 */
 
 
@@ -67,4 +72,4 @@ Create External Table Fact_flight_ExtADLS
 
 
 
- select * from Fact_flight_ExtADLS;
+ select * from Fact_flight_ExtADLS;	
