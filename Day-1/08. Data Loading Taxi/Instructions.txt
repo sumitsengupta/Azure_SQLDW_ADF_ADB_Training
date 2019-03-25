@@ -1,2 +1,4 @@
 Follow instructions from:
 https://docs.microsoft.com/en-us/azure/sql-data-warehouse/load-data-from-azure-blob-storage-using-polybase
+
+The SQLs are already in "All SQL.sql" script.
