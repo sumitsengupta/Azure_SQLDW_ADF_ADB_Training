@@ -19,7 +19,7 @@ Timeline
 
 8:00 - 8: 30 - Into to SQLDW Gen2, Architecture
 
-8:30 - Start of Lab - In order from "Dat1" folder - 01,02,05,07
+8:30 - Start of Lab - In order from "Day-1" folder - 01,02,05,07
 
 9:45 - Break
 
@@ -29,6 +29,6 @@ Timeline
 
 1:45 - Break
 
-2:00 - Continue on SQLDW Lab + Day3 ETL LAb - ADF, Databricks
+2:00 - Continue on SQLDW Lab + "Day-3" ETL LAb - ADF, Databricks
 
 3:30 - If time permits, run through some SQLDW demo SQL scripts
