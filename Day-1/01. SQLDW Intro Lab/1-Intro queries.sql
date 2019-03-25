@@ -28,21 +28,27 @@ JOIN    sys.databases                     AS db ON ds.database_id = db.database_
 ;
 */
 
--- Scaling a SQL DW
+-- Scaling a SQL DW - skip these two for now.
+
 --Gen1
+/*
 CREATE DATABASE myElasticSQLDW
 WITH
 (    SERVICE_OBJECTIVE = 'DW1000'
 )
 ;
+*/
 
 --Gen2
+
+/*
 CREATE DATABASE myComputeSQLDW
 WITH
 (    
 SERVICE_OBJECTIVE = 'DW100c'
 )
 ;
+*/
 
 
 SELECT    *
