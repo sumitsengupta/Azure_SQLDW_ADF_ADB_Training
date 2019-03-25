@@ -1,3 +1,6 @@
+Drop External Table Fact_flight_Ext ;
+Drop Table Fact_Flight_test ;
+
 Create External Table Fact_flight_Ext
 					(
 					  [DateId] int NULL, 
@@ -20,8 +23,8 @@ Create External Table Fact_flight_Ext
 					  [NASDelay] float NULL, 
 					  [AircraftId] float NULL
 					)
-					 With (Location = 'Tables/FactFlights/2016', 
-						   Data_Source = MastData_stor,
+					 With (Location = '/demodata/Tables/FactFlights/2010', 
+						   Data_Source = alDatasource,
 						   File_Format = pipe)
 
 
