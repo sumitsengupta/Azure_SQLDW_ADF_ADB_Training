@@ -13,7 +13,7 @@ Drop  EXTERNAL FILE FORMAT pipe ;
 
 
 -- Create Database Master Key: This object is used to encrypt the Database Scoped Credential's Secret and store it in the Data Warehouse
-Create  Master Key
+Create  Master Key NCRYPTION BY PASSWORD = 'your_master_key_password' 
 
 
 -- When connecting to Azure Data Lake Store Gen2 , you need to supply the  Azure Data Lake Storage Access key SQL DW so that it can access the data. 
