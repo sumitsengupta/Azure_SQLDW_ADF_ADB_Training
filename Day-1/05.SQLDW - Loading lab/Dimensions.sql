@@ -15,9 +15,9 @@ Create External table Aircraft_IMPORT
 	[Year] [smallint] NULL)
 With
 (
-data_source = MastData_Stor,     -- Reference the External Data Source that you want to read from
+data_source = alDataSource,     -- Reference the External Data Source that you want to read from
 File_format = pipe,              -- Reference the File Format that the data is in
-location = 'aircraft' -- specify the directory location that you want to read from. PolyBase has traverses all childern directories and files from a stated filepath.
+location = 'demodata/aircraft' -- specify the directory location that you want to read from. PolyBase has traverses all childern directories and files from a stated filepath.
 )
 
 
