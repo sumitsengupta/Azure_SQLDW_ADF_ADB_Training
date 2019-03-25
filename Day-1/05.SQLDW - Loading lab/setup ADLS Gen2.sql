@@ -1,5 +1,8 @@
 /* clean up script 
 
+-- Please note - for a brand new database these do not exist so will error out - ignore
+-- This will let you run the queries subsequent times
+
 drop External Table Fact_flight_ExtADLS
 drop External Data Source alDataSource
 drop Database Scoped Credential aldata
@@ -13,7 +16,7 @@ Drop  EXTERNAL FILE FORMAT pipe ;
 
 
 -- Create Database Master Key: This object is used to encrypt the Database Scoped Credential's Secret and store it in the Data Warehouse
-Create  Master Key NCRYPTION BY PASSWORD = 'your_master_key_password' 
+Create  Master Key ENCRYPTION BY PASSWORD = 'your_master_key_password' 
 
 
 -- When connecting to Azure Data Lake Store Gen2 , you need to supply the  Azure Data Lake Storage Access key SQL DW so that it can access the data. 

@@ -19,7 +19,7 @@ DECLARE @EndMonth INT
 WHILE (SELECT @YearCounter) <= 2016 -- Yearly Loop
 BEGIN
 
-	SET @Location = CONCAT('Tables\FactFlights\',@YearCounter)
+	SET @Location = CONCAT('DemoData\Tables\FactFlights\',@YearCounter)
 
 	SET @SQLString = 
 	CONCAT('Create External Table extflight_',@Date,'
@@ -45,7 +45,7 @@ BEGIN
 					  [AircraftId] float NULL
 					)
 					 With (Location = ''',@location,''', 
-						   Data_Source = MastData_stor,
+						   Data_Source = alDatasource,
 						   File_Format = pipe)
 					')
 
